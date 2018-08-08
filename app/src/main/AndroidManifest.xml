@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ivonkhalif.ragnarok.kasir_online">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".PelayanActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LaporanActivity" />
+        <activity android:name=".PembayaranActivity" />
+        <activity android:name=".PemesananActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".ScannerActivity"
+            android:label="Scan Menu" />
+        <activity android:name=".PenampungActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OwnerActivity"
+            android:label="@string/title_activity_owner"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DaftarMenuActivity"
+            android:parentActivityName=".OwnerActivity" />
+        <activity
+            android:name=".InputActivity"
+            android:parentActivityName=".OwnerActivity" />
+        <activity
+            android:name=".KokiActivity"
+            android:label="Koki Activity" />
+        <activity android:name=".PesananKokiActivity" />
+        <activity android:name=".KasirActivity" />
+        <activity android:name=".TakeAwayActivity" />
+        <activity android:name=".DetailActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ivonkhalif.ragnarok.kasir_online.TakeAwayActivity">
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlmenu"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="top|center">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:src="@drawable/paket1"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:src="@drawable/paket2"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlmenu2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        >
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paket1"/>
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar"
+            android:text="PAKET 1"
+            android:layout_toLeftOf="@+id/hargamenu"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar"
+            android:layout_toLeftOf="@+id/hargamenu"
+            android:text="Nasi, Ayam Geprek,Sambal, Lalapan" />
+
+        <TextView
+            android:id="@+id/hargamenu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:text="20000"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+        <edu.counterview.CounterView
+            android:id="@+id/cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paket2"/>
+
+        <TextView
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar2"
+            android:text="PAKET 2"
+            android:layout_toLeftOf="@+id/hargamenu2"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar2"
+            android:layout_toLeftOf="@+id/hargamenu2"
+            android:text="Nasi, Ayam Geprek, Mozarela, Sambal, Lalapan" />
+
+        <TextView
+            android:id="@+id/hargamenu2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:text="45000"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+        <edu.counterview.CounterView
+            android:id="@+id/cv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#d6d1d1"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/textpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5pt"
+            android:text="Total Payment"
+            android:textSize="9pt" />
+        <TextView
+            android:id="@+id/textpesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/textpayment"
+            android:layout_marginLeft="5pt"
+            android:text="Pesanan 1"
+            android:textSize="7pt" />
+        <TextView
+            android:id="@+id/textRp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5pt"
+            android:text="Rp."
+            android:textSize="9pt" />
+
+        <TextView
+            android:id="@+id/totalpayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5pt"
+            android:text="45000"
+            android:textSize="9pt" />
+    </RelativeLayout>
+ </LinearLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pembayaran"
+        app:fabSize="normal"
+        android:text="Pembayaran"
+        android:background="@color/bg_login"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>

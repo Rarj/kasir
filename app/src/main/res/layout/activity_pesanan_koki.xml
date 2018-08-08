@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#afa3f2f2"
+    tools:context="com.ivonkhalif.ragnarok.kasir_online.PesananKokiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gambar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paket1"/>
+
+        <TextView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar"
+            android:text="PAKET 1"
+            android:layout_toLeftOf="@+id/hargamenu"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar"
+            android:layout_toLeftOf="@+id/hargamenu"
+            android:text="Nasi, Ayam Geprek,Sambal, Lalapan" />
+
+        <Button
+            android:id="@+id/hargamenu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:text="selesai"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paket2"/>
+
+        <TextView
+            android:id="@+id/menu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar2"
+            android:text="PAKET 2"
+            android:layout_toLeftOf="@+id/hargamenu2"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/gambar2"
+            android:layout_toLeftOf="@+id/hargamenu2"
+            android:text="Nasi, Ayam Geprek, Mozarela, Sambal, Lalapan" />
+
+        <Button
+            android:id="@+id/hargamenu2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:text="selesai"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textSize="14dp" />
+    </RelativeLayout>
+</LinearLayout>
